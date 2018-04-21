@@ -15,7 +15,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "starti": "next start",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build",
     "serve": "node index.js"
   },
   "keywords": [],

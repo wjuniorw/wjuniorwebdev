@@ -19,7 +19,9 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
+p > a {
+            color: #62ffda;
+          }
 /* Header transparent MDL */
 /*.demo-layout-transparent {
   background: url('/static/screenshot.png') center / cover;
@@ -35,7 +37,7 @@ body {
 	color: #fff;
 	line-height: 64px;
 	padding: 0 24px;
-	 background: #b3d4fc;
+	background: #b3d4fc;
 }
 /*header {
 	border-bottom: solid 1px cyan !important;
@@ -143,6 +145,12 @@ a {
   /*background: url('/static/fundo2.png') center top no-repeat;*/
   background: #18bc9c;
   background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .android-me-section {
+    height: 630px;
+  }
 }
 
 .android-font {

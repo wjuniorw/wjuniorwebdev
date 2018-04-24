@@ -13,7 +13,6 @@ const Btn = (prop) => (
         a:active {
           background:cyan;
           color: navy;
-          color: navy;
           background: cyan;
           border-color: cyan;
         }

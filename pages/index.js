@@ -12,9 +12,7 @@ import './static/material.min.css'
 
 const View = (prop)=>(
     <div className="mdl-layout__container">
-        <Head>
-          <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1" />
-        </Head>
+        <Head />
         { prop.children }
     </div>
 )

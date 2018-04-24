@@ -10,6 +10,7 @@ const HtmlHead = ({title, children})=> (
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/_next/static/style.css" />
     <script src="/static/material.js" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <title>{ title }</title>
     { children }
     <script>

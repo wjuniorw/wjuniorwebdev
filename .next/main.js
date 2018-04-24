@@ -32654,6 +32654,7 @@ module.exports = function(module) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./pages/static/main.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32720,6 +32721,8 @@ module.exports = function(module) {
 
 /***/ }),
 
+=======
+>>>>>>> 59d80417c5ed5cc5ea86b2613d6d8fc4d37f269e
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 

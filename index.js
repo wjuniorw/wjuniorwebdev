@@ -10,6 +10,7 @@ const handle = app.getRequestHandler()
 app.prepare()
 .then(() => {
   const server = express()
+  server.use(express.static(__dirname + '/static'))
 
   server.get('*', (req, res) => {
     return handle(req, res)

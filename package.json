@@ -22,5 +22,9 @@
   },
   "keywords": [],
   "author": "wjuniorw",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node":"8.11.1",
+    "npm":"5.6.0"
+  }
 }

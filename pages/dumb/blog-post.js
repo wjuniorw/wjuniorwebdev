@@ -60,13 +60,6 @@ Twitter
 <script async="true" class="speakerdeck-embed" data-id="80d42640c6a3013196d9061a363cc5d8" src="//speakerdeck.com/assets/embed.js"></script>
 <h3>Deixe seu comentário</h3>
 <article id="disqus_thread"></article>
-<script>
-  (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//vitorleal.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
 </section>
 <footer class="android-footer mdl-mega-footer">
 <div class="mdl-mega-footer--top-section">

@@ -11,5 +11,5 @@ const Main = ({title, headTitle, children})=> (
     <div className="mdl-layout__obfuscator"></div>
   </section>
 )
-export default Main
 
+export default Main

@@ -1,5 +1,5 @@
 
-import Head from './dumb/Head'
+// import Head from './dumb/Head'
 // import Link from 'next/link'
 import Btn from './dumb/Btn'
 import Main from './dumb/Main-new'
@@ -10,10 +10,9 @@ import './static/main.css'
 // import './static/index.styl'
 import './static/material.min.css'
 
-const View = (prop)=>(
+const View = ({ children})=>(
     <div className="mdl-layout__container">
-        <Head />
-        { prop.children }
+        { children }
     </div>
 )
 const Section = (prop)=>(

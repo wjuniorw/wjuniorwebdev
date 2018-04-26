@@ -10,11 +10,13 @@ import './static/main.css'
 // import './static/index.styl'
 import './static/material.min.css'
 
+
 // const View = ({ children})=>(
 //     <div className="mdl-layout__container">
 //         { children }
 //     </div>
 // )
+
 const Section = (prop)=>(
       <Main  headTitle={'WJunior WebDev'} title={'Wilson Junior'}>
         <Content />

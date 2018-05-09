@@ -2,10 +2,10 @@
 const Drawer = (prop) => (
   <div className="android-drawer mdl-layout__drawer">
   <nav className="mdl-navigation">
-    <a className="mdl-navigation__link" href="https://wjuniorw.github.io/">Home</a>
-    <a className="mdl-navigation__link" href="https://wjuniorw.com/blog">Blog</a>
-    <a className="mdl-navigation__link" href="https://wjuniorw.com/projetos">Projetos</a>
-    <a className="mdl-navigation__link" href="https://wjuniorw.com/portfolio">Portfolio</a>
+    <a className="mdl-navigation__link" href="/">Home</a>
+    <a className="mdl-navigation__link" href="/blog">Blog</a>
+    <a className="mdl-navigation__link" href="/projetos">Projetos</a>
+    <a className="mdl-navigation__link" href="/portfolio">Portfolio</a>
     <a className="mdl-navigation__link" href="https://github.com/wjuniorw" target="_blank">GitHub</a>
     <a className="mdl-navigation__link" href="http://www.linkedin.com/in/wjuniorw" target="_blank">
       LinkedIn

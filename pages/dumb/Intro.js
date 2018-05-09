@@ -26,7 +26,7 @@ const ME = ({goTo})=> (
           flex-direction: column;
           align-items: center;
           width: 100%;
-          height: 630px;
+          height: 690px;
         }
         header {
           width: 100% !important;

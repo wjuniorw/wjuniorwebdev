@@ -9,7 +9,7 @@ const Header = ({title})=> (
         <nav className="android-navigation mdl-navigation">
           <a className="mdl-navigation__link mdl-typography--text-uppercase active" href="/">Home</a>
           <a className="mdl-navigation__link mdl-typography--text-uppercase" href="/projetos">Projetos</a>
-          <a className="mdl-navigation__link mdl-typography--text-uppercase" href="https://wjunior.com/portfolio">Portfolio</a>
+          <a className="mdl-navigation__link mdl-typography--text-uppercase" href="/portfolio">Portfolio</a>
         </nav>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Skills from './Skills'
 import Blog from './Blog'
 import Footer from './footer'
 
+    // <a href="http://www.freebiebitcoin.com">Earn free bitcoin</a>
 const Content = (prop)=> (
   <div className="android-content mdl-layout__content">
     <a name="top"></a>

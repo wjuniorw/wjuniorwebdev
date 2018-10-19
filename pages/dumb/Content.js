@@ -8,6 +8,7 @@ import Footer from './footer'
 const Content = (prop)=> (
   <div className="android-content mdl-layout__content">
     <a name="top"></a>
+     <a href="http://www.freebiebitcoin.com">Earn free bitcoin</a>
     <a id="top"></a>
     <ME goTo={goTo} />
     <OpenSource />

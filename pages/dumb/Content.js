@@ -3,6 +3,8 @@ import OpenSource from './Open-source'
 import Skills from './Skills'
 import Blog from './Blog'
 import Footer from './footer'
+import smoothscroll from 'smoothscroll-polyfill'
+
 
     // <a href="http://www.freebiebitcoin.com">Earn free bitcoin</a>
 const Content = (prop)=> (
@@ -18,7 +20,10 @@ const Content = (prop)=> (
 )
 const goTo = function (to) {
   // window.scrollTo(0,1)
-  window.document.querySelector(to).scrollIntoView({
+  // kick off the polyfill!
+  smoothscroll.polyfill()
+  const alvo = window.document.querySelector(to)
+  alvo.scrollIntoView({
     behavior: 'smooth'
   })
 }

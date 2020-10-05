@@ -22,7 +22,7 @@ app.prepare()
 
   server.listen(port, (err) => {
     if (err) throw err
-    console.log('> Ready on http://localhost:'+ process.env.IP+ ':' +port)
+    console.log('> Ready on http://localhost:'+ process.env.HOST+ ':' +port)
     console.log(`Site rodando em : ${host}: ${port}`)
   })
 })

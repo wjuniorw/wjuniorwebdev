@@ -26,7 +26,7 @@ app.prepare()
     console.log(`Site rodando em : ${host}: ${port}`)
   })
 })
-.catch((ex) => {
-  console.error(ex.stack)
+.catch((error) => {
+  console.error(erro.message)
   process.exit(1)
 })

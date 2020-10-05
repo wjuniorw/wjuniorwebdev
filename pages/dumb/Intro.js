@@ -10,7 +10,7 @@ const ME = ({goTo})=> (
       <div id="self">
         <img id="pict" src="/static/wjuniorw.png" />
         <a id="down" href="#" onClick={ ()=> goTo('#talks') }>
-        <button className="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
+        <button style={{ position: 'absolute!important', top: 'unset!important', left: '75%' }} className="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
         <i className="material-icons">expand_more</i>
         <span className="mdl-button__ripple-container"><span className="mdl-ripple"></span></span></button>
         </a>
@@ -54,8 +54,8 @@ const ME = ({goTo})=> (
           }
         }
         #self {
-          width: 200px;
-          height: 200px;
+          width: 250px;
+          height: 250px;
           border-radius: 50%;
          background-color: #2c3e50;
         /*background-color: #44bca8;*/

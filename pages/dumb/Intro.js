@@ -17,7 +17,7 @@ const ME = ({goTo})=> (
       </div>
       <p id="info" className="android-sub-slogan">
         <i>Mobile Developer </i> na
-        <a className="android-link" href="https://www.uxmob.com/" target="_blank"> UXMob</a>.
+        <a className="android-link" href="https://www.uxmob.com.br" target="_blank"> UXMob</a>.
       </p>
       <style jsx>
         {`

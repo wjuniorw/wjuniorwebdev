@@ -6,11 +6,6 @@ import Main from './dumb/Main-new'
 // import Header from './dumb/Header'
 import Content from './dumb/Content'
 
-import './static/main.css'
-// import './static/index.styl'
-import './static/material.min.css'
-
-
 // const View = ({ children})=>(
 //     <div className="mdl-layout__container">
 //         { children }

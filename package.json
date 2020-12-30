@@ -11,7 +11,9 @@
     "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^5.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-styled-components": "latest"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",

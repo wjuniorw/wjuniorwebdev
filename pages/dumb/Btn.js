@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const Btn = (prop) => (
   <div>
-    <Link href={prop.goto}>
+    {/* <Link href={prop.goto}>
       <StyledLink>{prop.children}</StyledLink>
-    </Link>
+    </Link> */}
   </div>
 );
 

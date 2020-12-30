@@ -46,3 +46,5 @@ export const ToolbarNavItens = styled.div`
     display: none;
   }
 `
+
+export default {}

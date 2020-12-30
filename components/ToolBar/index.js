@@ -6,13 +6,13 @@ import {
   ToolbarLogo,
   ToolbarNavItens,
 } from './styles'
-// import DrawerButton from '../SideDrawer/DrawerButton'
+import DrawerButton from '../DrawerButton'
 
 const ToolBar = ({ toggleDrawer }) => (
   <ToolbarStyled>
     <ToolbarNav>
       <div>
-        {/* <DrawerButton click={toggleDrawer} /> */}
+        <DrawerButton click={toggleDrawer} />
       </div>
       <ToolbarLogo>
         <a href="/">Wilson Junior</a>

@@ -1,46 +1,37 @@
-import Link from 'next/link'
+import Link from "next/link";
+import styled from "styled-components";
 
 const Btn = (prop) => (
   <div>
     <Link href={prop.goto}>
-      <a>
-        { prop.children }
-      </a>
+      <StyledLink>{prop.children}</StyledLink>
     </Link>
-    <style jsx>
-      {
-        `
-        a:active {
-          background:cyan;
-          color: navy;
-          background: cyan;
-          border-color: cyan;
-        }
-        a:focus {
-          background:cyan;
-          color: navy;
-          background: cyan;
-          border-color: cyan;
-        }
-        a:hover {
-          background:cyan;
-          color: navy;
-          background: cyan;
-          border-color: cyan;
-        }
-        a {
-          color: cyan;
-          display: flex;
-          padding: 5%;
-          // align-itens: center;
-          // justify-content: center;
-          border: solid 1px;
-          text-decoration: none;
-          margin: 5px;
-        }
-        `
-      }
-    </style>
   </div>
-)
-export default Btn
+);
+
+const StyledLink = styled.a`
+  :active {
+    background: cyan;
+    color: navy;
+    background: cyan;
+    border-color: cyan;
+  }
+  :focus {
+    background: cyan;
+    color: navy;
+    background: cyan;
+    border-color: cyan;
+  }
+  :hover {
+    background: cyan;
+    color: navy;
+    background: cyan;
+    border-color: cyan;
+  }
+    color: cyan;
+    padding: 5%;
+    border: solid 1px;
+    text-decoration: none;
+    margin: 5px;
+`
+export default Btn;

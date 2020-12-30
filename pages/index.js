@@ -9,7 +9,7 @@ import { createGlobalStyle } from 'styled-components'
 // import OldContent from "./dumb/Content";
 // import Content from "./components/Content";
 
-import ToolBar from './components/ToolBar'
+import ToolBar from '../components/ToolBar'
 
 const GlobalStyle = createGlobalStyle`
   body {

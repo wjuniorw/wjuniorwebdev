@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import { createGlobalStyle } from 'styled-components'
 
 import ToolBar from '../components/ToolBar'
@@ -18,15 +18,15 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const App = (props) => {
-  const [open, toggle] = useState(false);
+  const [open, toggle] = useState(false)
   return (
     <>
-      <GlobalStyle/>
+      <GlobalStyle />
       <ToolBar toggleDrawer={() => toggle(!open)} />
       <SideDrawer show={open} />
       {open && <BackDrop closeDrawer={() => toggle(false)} />}
     </>
-  );
-};
+  )
+}
 
 export default App

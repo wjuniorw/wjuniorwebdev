@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react'
 
-import { SideDrawerNav, SideDrawerUl, SideDrawerItem } from "./styles";
+import { SideDrawerNav, SideDrawerUl, SideDrawerItem } from './styles'
 
 const SideDrawer = ({ show }) => (
   <SideDrawerNav show={show}>
     <SideDrawerUl>
       <SideDrawerItem>
-        <a href="/">About Me</a>
+        <a href="/about">About Me</a>
       </SideDrawerItem>
       <SideDrawerItem>
-        <a href="/Skills">Skills</a>
+        <a href="/skills">Skills</a>
       </SideDrawerItem>
     </SideDrawerUl>
   </SideDrawerNav>
-);
-export default SideDrawer;
+)
+export default SideDrawer

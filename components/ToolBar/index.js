@@ -21,13 +21,13 @@ const ToolBar = ({ toggleDrawer }) => (
       <ToolbarNavItens>
         <ul>
           <li>
-            <a href="/">Projetos</a>
+            <a href="/projects">Projetos</a>
           </li>
           <li>
-            <a href="/">Skills</a>
+            <a href="/skills">Skills</a>
           </li>
           <li>
-            <a href="/">Sobre mim</a>
+            <a href="/about">Sobre mim</a>
           </li>
         </ul>
       </ToolbarNavItens>

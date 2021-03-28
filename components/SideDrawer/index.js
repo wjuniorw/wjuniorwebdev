@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import { SideDrawerNav, SideDrawerUl, SideDrawerItem } from './styles'
 
@@ -6,10 +7,14 @@ const SideDrawer = ({ show }) => (
   <SideDrawerNav show={show}>
     <SideDrawerUl>
       <SideDrawerItem>
-        <a href="/about">About Me</a>
+        <Link href="/about">
+          <a>About Me</a>
+        </Link>
       </SideDrawerItem>
       <SideDrawerItem>
-        <a href="/skills">Skills</a>
+        <Link href="/skills">
+          <a>Skills</a>
+        </Link>
       </SideDrawerItem>
     </SideDrawerUl>
   </SideDrawerNav>

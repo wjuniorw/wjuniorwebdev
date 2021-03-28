@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import {
   ToolbarStyled,
@@ -15,19 +16,27 @@ const ToolBar = ({ toggleDrawer }) => (
         <DrawerButton click={toggleDrawer} />
       </div>
       <ToolbarLogo>
-        <a href="/">Wilson Junior</a>
+        <Link href="/">
+          <a>Wilson Junior</a>
+        </Link>
       </ToolbarLogo>
       <div style={{ flex: 1 }} />
       <ToolbarNavItens>
         <ul>
           <li>
-            <a href="/projects">Projetos</a>
+            <Link href="/projects">
+              <a>Projetos</a>
+            </Link>
           </li>
           <li>
-            <a href="/skills">Skills</a>
+            <Link href="/skills">
+              <a>Skills</a>
+            </Link>
           </li>
           <li>
-            <a href="/about">Sobre mim</a>
+            <Link href="/about">
+              <a>Sobre mim</a>
+            </Link>
           </li>
         </ul>
       </ToolbarNavItens>

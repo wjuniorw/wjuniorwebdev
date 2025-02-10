@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getArticleBySlug } from '@/lib/articles'
-import { ArticleBody } from '@/components/ArticleBody'
+import { ArticleBody } from '@/app/components/ArticleBody'
 
 interface PageProps {
   params: {

@@ -1,7 +1,8 @@
-"use client"
+'use client'
 
-import { useState, useEffect } from "react"
-import { BowArrowIcon } from "./icons/BowArrowIcon"
+import './icons/ArrowAnimation.css'
+import { BowArrowIcon } from './icons/BowArrowIcon'
+import { useState, useEffect, MouseEventHandler } from 'react'
 
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false)
@@ -15,16 +16,31 @@ export default function BackToTop() {
       }
     }
 
-    window.addEventListener("scroll", toggleVisibility)
+    window.addEventListener('scroll', toggleVisibility)
 
-    return () => window.removeEventListener("scroll", toggleVisibility)
+    return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+  const scrollToTop: MouseEventHandler<HTMLButtonElement> = event => {
+    const paths = Array.from(
+      (event.target as HTMLElement).querySelectorAll('.arrow')
+    ) as SVGPathElement[]
+
+    paths.forEach(it => {
+      it.classList.add('animate')
     })
+
+    setTimeout(() => {
+      if (paths.length) {
+        paths.forEach(it => {
+          it.classList.remove('animate')
+        })
+      }
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    }, 500)
   }
 
   if (!isVisible) {
@@ -34,11 +50,9 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-4 right-4 bg-pataxo-earth text-white p-2 rounded-full shadow-lg hover:bg-pataxo-red transition-colors duration-300"
-      aria-label="Voltar ao topo"
-    >
-      <BowArrowIcon className="w-6 h-6 transform rotate-45" />
+      className='fixed bottom-4 right-4 bg-pataxo-earth text-white p-2 rounded-full shadow-lg hover:bg-pataxo-red transition-colors duration-300 rotate-45'
+      aria-label='Voltar ao topo'>
+      <BowArrowIcon className='w-6 h-6' />
     </button>
   )
 }
-

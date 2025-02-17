@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { event } from '@/lib/gtag'
 import { motion } from 'framer-motion'
 import { Github, Gitlab, Linkedin, Twitter, FileDown } from 'lucide-react'
 
@@ -72,7 +73,14 @@ export default function Hero() {
           className='mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-pataxo-red hover:bg-pataxo-earth focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pataxo-river transition-colors duration-300'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}>
+          transition={{ delay: 0.5 }}
+          onClick={() =>
+            event({
+              action: 'download_cv',
+              category: 'conversion',
+              label: 'Download CV',
+            })
+          }>
           <FileDown className='mr-2 h-4 w-4' />
           Download CV
         </motion.a>

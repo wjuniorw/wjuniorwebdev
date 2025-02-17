@@ -4,8 +4,9 @@ import React from 'react'
 import Script from 'next/script'
 import { pageview } from '@/lib/gtag'
 import { usePathname } from 'next/navigation'
+import { Analytics } from '@vercel/analytics/react'
 import { ThemeProvider } from './components/ThemeProvider'
-
+import { SpeedInsights } from '@vercel/speed-insights/next'
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -45,6 +46,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange>
           {children}
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

@@ -1,6 +1,6 @@
 'use client'
-
 import './icons/ArrowAnimation.css'
+import * as Tracking from '@/lib/gtag'
 import { BowArrowIcon } from './icons/BowArrowIcon'
 import { useState, useEffect, MouseEventHandler } from 'react'
 
@@ -50,6 +50,7 @@ export default function BackToTop() {
         behavior: 'smooth',
       })
     }, 500)
+    Tracking.event({ action: 'click', label: 'back_to_top', value: 1, category: 'event' })
   }
 
   if (!isVisible) {

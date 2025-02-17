@@ -1,10 +1,6 @@
-import { Resend } from 'resend'
+// import { Resend } from 'resend'
+import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server'
-
-const resend = new Resend(process.env.RESEND_API_KEY)
-const contactName = process.env.EMAIL_CONTACT_NAME
-const emailContact = process.env.EMAIL_CONTACT!
-const sub = process.env.EMAIL_SUBJECT!
 
 export async function POST(req: Request) {
   try {
@@ -15,13 +11,18 @@ export async function POST(req: Request) {
         { status: 400 }
       )
     }
-    // Aqui você pode integrar com um serviço de email, como Nodemailer ou Resend
-    const data = await resend.emails.send({
-      subject: sub,
-      replyTo: email,
-      to: [emailContact],
-      from: `${contactName} <${emailContact}>`,
-      text: `Nome: ${name}\nEmail: ${email}\nMensagem: ${message}`,
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS, // Precisa gerar uma "senha de app"
+      },
+    })
+    await transporter.sendMail({
+      from: `"${name}" <${email}>`,
+      to: process.env.EMAIL_USER,
+      subject: 'Novo Contato pelo Site',
+      text: ` "${name}" <${email}> \n message: ${message}`,
     })
 
     return NextResponse.json({ message: 'Mensagem enviada com sucesso!' })

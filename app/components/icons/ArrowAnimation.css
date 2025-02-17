@@ -7,3 +7,12 @@
 .arrow.animate {
   transform: translate3d(-30px, -30px, 0);
 }
+
+.bow-string {
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Estica e move a corda */
+.bow-string.animate {
+  transform: scale(0.7);
+}

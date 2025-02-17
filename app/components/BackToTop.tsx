@@ -26,15 +26,24 @@ export default function BackToTop() {
       (event.target as HTMLElement).querySelectorAll('.arrow')
     ) as SVGPathElement[]
 
+    const bowString = (event.target as HTMLElement).querySelector('.bow-string')
+
     paths.forEach(it => {
       it.classList.add('animate')
     })
+
+    if (bowString) {
+      bowString.classList.add('animate')
+    }
 
     setTimeout(() => {
       if (paths.length) {
         paths.forEach(it => {
           it.classList.remove('animate')
         })
+        if (bowString) {
+          bowString.classList.remove('animate')
+        }
       }
       window.scrollTo({
         top: 0,

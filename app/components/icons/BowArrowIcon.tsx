@@ -19,6 +19,7 @@ export const BowArrowIcon: React.FC<React.SVGProps<SVGSVGElement>> = props => {
       <path
         id='lines'
         fill='#D99E82'
+        className='bow-string'
         d='M29.5 29.779a.5.5 0 0 1-.5.5H3.78a.5.5 0 0 1 0-1H29a.5.5 0 0 1 .5.5zm.279-.279a.5.5 0 0 1-.5-.5V3.779a.5.5 0 1 1 1 0V29a.5.5 0 0 1-.5.5z'
       />
       <path
